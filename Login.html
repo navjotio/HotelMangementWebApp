@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Login</title>
     <link rel="stylesheet" type="text/css" href="Login.css" />
-    <script src="app.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
 <body>
@@ -17,9 +17,12 @@
             <p>Username</p>
             <input type="Username" name="username" placeholder="Enter username" required>
             <p>Password</p>
-            <input type="password" name="password" placeholder="Enter Password" required>
+            <input type="password" name="password" autocomplete="current-password" required="" id="id_password"
+                placeholder="Enter Password" required>
             <input type="submit" name="" value="Login"><br />
             <a href="lostpassword.js">Lost your password?</a><br />
         </form>
+        <i class="far fa-eye" id="togglePassword"></i>
     </div>
+    <script src="app.js"></script>
 </body>
