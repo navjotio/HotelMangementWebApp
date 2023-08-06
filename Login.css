@@ -19,24 +19,25 @@ h1 {
 
 .loginbox {
     width: 400px;
-    height: 400px;
-    color: #fff;
-    top: 60%;
+    height: 360px;
+    color: #111111;
+    top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    padding: 80px 20px;
+    padding: 70px 20px;
     border-radius: 10px;
-    box-shadow: 5px 20px 50px #000;
+    box-shadow: 1px 10px 30px #000000;
 }
 
 .logo {
-    width: 120px;
-    height: 120px;
+    width: 59%;
+    height: 50%;
     position: absolute;
-    border-radius: 20%;
-    top: -12%;
-    left: calc(50% - 60px);
+    top: -35%;
+    left: 20%;
+    border-radius: 3%;
+
 }
 
 .loginbox p {
@@ -53,9 +54,9 @@ h1 {
 }
 
 .loginbox input[type="Username"],
-input[type="Password"] {
+input[type="password"] {
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000000;
     background: transparent;
     outline: none;
     height: 40px;
@@ -69,25 +70,26 @@ input[type="Password"] {
     width: 225px;
     position: absolute;
     left: 25%;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(182, 74, 74);
     transition: .4s;
 }
 
 .loginbox input[type="submit"]:hover {
     cursor: pointer;
-    color: white;
+    color: rgb(219, 4, 4);
 }
 
 .loginbox a {
     text-decoration: none;
     font-size: 18px;
     line-height: 120px;
-    color: white;
+    color: rgb(255, 250, 250);
     position: absolute;
-    left: 35%;
+    left: 33%;
+    font-weight: bold;
 
 }
 
@@ -102,14 +104,14 @@ input[type="Password"] {
 #togglePassword {
     margin-left: 30px;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     left: 85%;
-    bottom: 59%;
+    bottom: 55%;
 }
 
 #id_password {
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000000;
     background: transparent;
     outline: none;
     height: 40px;

@@ -7,22 +7,21 @@
     <title>Hotel Login</title>
     <link rel="stylesheet" type="text/css" href="Login.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
-
     <div class="loginbox">
-
-        <form>
+        <form onsubmit="validate()" id="LoginForm" method="get">
             <p>Username</p>
-            <input type="Username" name="username" placeholder="Enter username" required>
+            <input id="Uname" type="username" name="username" placeholder="Enter username" autocomplete="off" required>
             <p>Password</p>
             <input type="password" name="password" autocomplete="current-password" required="" id="id_password"
                 placeholder="Enter Password" required>
-            <input type="submit" name="" value="Login"><br />
+            <input type="submit" name="" value="Login" class="LoginBtn"><br />
             <a href="lostpassword.js">Lost your password?</a><br />
         </form>
+        <img src="P.png" class="logo">
         <i class="far fa-eye" id="togglePassword"></i>
     </div>
-    <script src="app.js"></script>
 </body>
