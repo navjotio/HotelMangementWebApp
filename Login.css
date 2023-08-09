@@ -37,7 +37,6 @@ h1 {
     top: -35%;
     left: 20%;
     border-radius: 3%;
-
 }
 
 .loginbox p {
@@ -79,7 +78,7 @@ input[type="password"] {
 
 .loginbox input[type="submit"]:hover {
     cursor: pointer;
-    color: rgb(219, 4, 4);
+    color: rgb(8, 8, 8);
 }
 
 .loginbox a {
@@ -90,7 +89,6 @@ input[type="password"] {
     position: absolute;
     left: 33%;
     font-weight: bold;
-
 }
 
 .loginbox a:hover {

@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open login.html",
-            "file": "c:\\Users\\navjo\\OneDrive\\Desktop\\Documents\\Project Hotel\\login.html"
+            "name": "Open MainPage.html",
+            "file": "c:\\Users\\navjo\\OneDrive\\Desktop\\Documents\\Project Hotel\\MainPage.html"
         }
     ]
 }

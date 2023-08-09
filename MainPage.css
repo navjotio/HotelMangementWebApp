@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(255, 255, 255, 0.616);
+    background-color: rgb(255, 255, 255);
     background-image: url("P.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,8 +9,7 @@ body {
 #submitbtn {
     border: 0;
     padding: .5rem;
-    background: rgb(255, 253, 253);
-    color: black;
+    background: rgb(255, 255, 255);
     width: 255px;
     font-size: 24px;
     text-transform: uppercase;
@@ -21,14 +20,50 @@ body {
     border-radius: 20px;
     box-sizing: border-box;
     cursor: pointer;
-    transition: .5s;
+    transition: .4s;
 
 }
 
 button a {
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-decoration: none;
+}
 
+nav {
+    background: rgba(255, 255, 255, 0);
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    position: relative;
+    bottom: 15%;
+    right: 1cm;
+}
+
+nav ul li {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    margin: 0px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+ul li :hover {
+    background-color: rgb(15, 15, 15);
+    color: #e71f1f;
+    transition: 0.7s ease;
+}
+
+nav ul li a {
+    color: rgb(15, 15, 15);
+    padding: 5px 10px;
+    text-decoration: none;
 }

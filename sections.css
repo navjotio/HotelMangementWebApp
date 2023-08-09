@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-image: url('Login.png');
+    background-position: 0%;
+
+}
+
+.right {
+    right: 0;
+    background-image: url('Login.png');
+    background-position: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.stbutton {
+    font-weight: bold;
+    color: white;
+    height: 55px;
+    width: 110px;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: .6s;
+    overflow: hidden;
+    background: rgb(182, 74, 74);
+    border: none;
+}
+
+.stbutton:focus {
+    outline: none;
+}
+
+.stbutton:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.stbutton:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+
+}
+
+.stbutton:hover {
+    background: #000000;
+    cursor: pointer;
+}
+
+.stbutton:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.stbutton:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: -1;
+    transition: .7s;
+}
+
+.tbutton {
+    font-weight: bold;
+    color: white;
+    height: 55px;
+    width: 110px;
+    border: 1px solid;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: .6s;
+    overflow: hidden;
+    background: rgb(182, 74, 74);
+    border: none;
+}
+
+stbutton:focus {
+    outline: none;
+}
+
+.tbutton:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+
+}
+
+.tbutton:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.tbutton:hover {
+    background: #030303;
+    cursor: pointer;
+}
+
+.tbutton:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.tbutton:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: -1;
+    transition: .7s;
+}

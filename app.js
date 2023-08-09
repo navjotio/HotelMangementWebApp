@@ -1,4 +1,5 @@
 'use strict';
+// Code for the Login Page
 //Show password feature 
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#id_password');
