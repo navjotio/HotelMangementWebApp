@@ -1,0 +1,66 @@
+body {
+    background-image: url("Login.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.new-expense__controls {
+    font-family: sans-serif;
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: .4s;
+    left: 25%;
+    position: relative;
+    margin-top: 90px;
+
+}
+
+.new-expense__control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.new-expense__control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 10rem;
+    max-width: 100%;
+    margin-bottom: 25px;
+    background-color: transparent;
+}
+
+.new-expense__actions {
+    text-align: right;
+}
+
+#btn {
+    font-weight: bold;
+    color: white;
+    height: 40px;
+    width: 130px;
+    border: 1px solid;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: .6s;
+    background: rgb(182, 74, 74);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-top: 28px;
+}
+
+#btn:hover {
+    background-color: black;
+}

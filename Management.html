@@ -1,0 +1,46 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=" user-scalable =no,width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="Management.css" />
+</head>
+
+<body>
+    <div class="ManBox">
+        <form>
+            <input type="button" class="FOH" value="Front Of House" id="foh"></label>
+            <input type="button" class="HKeeping" value="House Keeping" id="hkeeping"></label>
+            <input type="button" class="Main" value="Maintenance" id="main1"></label>
+            <input type="button" class="rooms" value="Rooms" id="rms"></label>
+        </form>
+    </div>
+    <script>
+        const foh = document.getElementById('foh')
+        foh.addEventListener("click", (e) => {
+            if (true) {
+                location.href = "FrontOfHouse.html"
+            }
+        })
+
+        const hkeeping = document.getElementById('hkeeping')
+        hkeeping.addEventListener("click", (e) => {
+            if (true) {
+                location.href = "HouseKeeping.html"
+            }
+        })
+
+        const main1 = document.getElementById('main1')
+        main1.addEventListener("click", (e) => {
+            if (true) {
+                location.href = "Maintenance.html"
+            }
+        })
+
+        const rooms = document.getElementById('rms')
+        rooms.addEventListener("click", (e) => {
+            if (true) {
+                location.href = "Rooms.html"
+            }
+        })
+    </script>
+</body>

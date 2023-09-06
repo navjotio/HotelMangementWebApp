@@ -62,12 +62,13 @@ input[type="password"] {
     font-size: 16px;
 }
 
-.loginbox input[type="submit"] {
+.LoginBtn {
     border: none;
     outline: none;
     height: 40px;
     width: 225px;
     position: absolute;
+    top: 53%;
     left: 25%;
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -76,7 +77,7 @@ input[type="password"] {
     transition: .4s;
 }
 
-.loginbox input[type="submit"]:hover {
+.LoginBtn:hover {
     cursor: pointer;
     color: rgb(8, 8, 8);
 }
@@ -84,11 +85,11 @@ input[type="password"] {
 .loginbox a {
     text-decoration: none;
     font-size: 18px;
-    line-height: 120px;
+    line-height: 180px;
     color: rgb(255, 250, 250);
-    position: absolute;
-    left: 33%;
     font-weight: bold;
+    position: relative;
+    left: 30%;
 }
 
 .loginbox a:hover {
