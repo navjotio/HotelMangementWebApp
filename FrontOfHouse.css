@@ -28,17 +28,21 @@ body {
     font-weight: bold;
     margin-bottom: 0.5rem;
     display: block;
+    text-align: center;
 }
 
 .new-expense__control input {
     font: inherit;
     padding: 0.5rem;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: none;
     width: 10rem;
     max-width: 100%;
     margin-bottom: 25px;
     background-color: transparent;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    outline: none;
 }
 
 .new-expense__actions {
@@ -63,4 +67,48 @@ body {
 
 #btn:hover {
     background-color: black;
+}
+
+.TableContent {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9rem;
+    align-items: center;
+    min-width: 400px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0 0 20px black;
+    position: absolute;
+    left: 40%;
+    margin-top: 6rem;
+}
+
+.TableContent thead tr {
+    background-color: rgb(182, 74, 74);
+    color: black;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.TableContent th,
+.TableContent td {
+    padding: 12px 15px;
+}
+
+.TableContent tbody tr {
+    border-bottom: 1px solid rgb(82, 81, 81);
+}
+
+.TableContent tbody tr:nth-of-type(odd) {
+    background-color: rgb(177, 177, 176);
+}
+
+.TableContent tbody tr:last-of-type {
+    border-bottom: 1px solid rgb(182, 74, 74);
+}
+
+.TableContent tbody tr.active-row {
+    color: white;
+    font-weight: bold;
 }

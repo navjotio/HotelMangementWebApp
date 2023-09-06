@@ -1,3 +1,5 @@
+<!doctype HTML>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content=" user-scalable =no,width=device-width, initial-scale=1.0" />
@@ -7,28 +9,96 @@
 
 <body>
     <form>
-        <div class="new-expense__controls">
+        <div class="new-expense__controls" id="data">
             <div class="new-expense__control">
                 <label>Employee Name</label>
-                <input type="text" required></input>
+                <input type="text" id="ename" required></input>
             </div>
             <div class="new-expense__control">
                 <label>Salary</label>
-                <input type="" min={0.01} step={0.01} required></input>
+                <input type="number" min='0.01' step='0.01' id="salary" required></input>
             </div>
             <div class="new-expense__control">
-                <label>Date</label>
-                <input type="date" min='2000-01-01' max='2023-12-31' required></input>
+                <label>Start Date</label>
+                <input type="date" min='2000-01-01' max='2023-12-31' id="sdate" required></input>
             </div>
             <div class="new-expense__control">
                 <label>Date Of Birth</label>
-                <input type="date" min="1940-01-01" max="2023-12-31 " required></input>
+                <input type="date" min="1940-01-01" max="2023-12-31" id="dob" required></input>
             </div>
             <div class="new-expense__control">
                 <label>Contact</label>
-                <input type="tel" required></input>
+                <input type="tel" id="contact" required maxlength="12"></input>
             </div>
             <button type="submit" id="btn">Add Employee</button>
         </div>
     </form>
+    <div id="container">
+        <table class="TableContent" id="tbl">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Date of Birth</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Navjot Singh</td>
+                    <td>90000</td>
+                    <td>2022-12-31</td>
+                    <td>2000-01-16</td>
+                    <td>5149920284</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+
+        let ename = document.getElementById('ename');
+        let money = document.getElementById('salary');
+        let sdate = document.getElementById('sdate');
+        let dob = document.getElementById('dob');
+        let contact = document.getElementById('contact');
+
+        let btn = document.getElementById('btn')
+        let list0 = [];
+        let list1 = [];
+        let list2 = [];
+        let list3 = [];
+        let list4 = [];
+        let n = 1
+        let x = 0;
+
+        btn.addEventListener('click', (e) => {
+
+            e.preventDefault();
+
+            let row = document.getElementById('tbl');
+            let nRow = row.insertRow(n);
+            list0[x] = ename.value
+            list1[x] = money.value
+            list2[x] = sdate.value
+            list3[x] = dob.value
+            list4[x] = contact.value
+
+            let cel0 = nRow.insertCell(0)
+            let cel1 = nRow.insertCell(1)
+            let cel2 = nRow.insertCell(2)
+            let cel3 = nRow.insertCell(3)
+            let cel4 = nRow.insertCell(4)
+
+            cel0.innerHTML = list0[x];
+            cel1.innerHTML = list1[x];
+            cel2.innerHTML = list2[x];
+            cel3.innerHTML = list3[x];
+            cel4.innerHTML = list4[x];
+            n++
+            x++
+
+        })
+
+    </script>
 </body>
